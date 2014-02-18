@@ -5,12 +5,12 @@ Gebruikers moeten op een intuitieve manier een visueel imponerende impressie kun
 
 ## features
 
-*-  Simpel foto's uploaden
-*-  Inloggen met Facebook
-*-  Meedere reizen per gebruiker
-*-  Reizen publiek of afgeschermd maken
-*-  Verslagen kunnen splitsen in verschillende catogarieen
-*-  Verhalen en foto's kunnen linken aan een simplistische kaart
+-  Simpel foto's uploaden **
+-  Inloggen met Facebook **
+-  Meedere reizen per gebruiker **
+-  Reizen publiek of afgeschermd maken **
+-  Verslagen kunnen splitsen in verschillende catogarieen **
+-  Verhalen en foto's kunnen linken aan een simplistische kaart **
 
 -   Mogelijkheid om comments te krijgen
 -   Verslagen kunnen 'liken'
