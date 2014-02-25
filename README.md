@@ -25,10 +25,10 @@ Gebruikers moeten op een intuitieve manier een visueel imponerende impressie kun
 ## Frameworks/languages
 
 -   Ruby on Rails 4.02
--   Jquerry
--   Omniouth-facebook 			github.com/mkdynamic/omniouth-facebook
+-   Jquerry 
+-   Omniouth-facebook 			github.com/mkdynamic/omniouth-facebook turorial https://coderwall.com/p/bsfitw
 -   Skeleton design				github.com/dhg/Skeleton
 -   Paperclip (photo upload)	github.com/thoughtbot/paperclip
--   Amcharts voor kaart			
+-   Amcharts voor kaart			http://www.amcharts.com/tutorials/your-first-ammap/
 
 ---
