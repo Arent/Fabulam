@@ -33,22 +33,14 @@ Een simplele pagina met een loginbutton en een plaatje. Alleen gelinked aan sess
 Een complexe view, waar alle informatie van de site samenkomt. Waaronder een lijst met rijzen, logout button, alle photo's per reis en een map
 Deze view is dan ook gelinked aan SessionController, TravelControler en MapControler
 
--   Travel
-Een complexe view, waar alle informatie van de site samenkomt. Waaronder een lijst met rijzen, logout button, alle photo's per reis en een map
-Deze view is dan ook gelinked aan SessionController, TravelControler en MapControler
+-   Edit
+Een relatief simpele view die gebruikt wordt voor het aanmaken/verwijderen van reizen en foto's
+Deze is gelinked aan TravelController en SessionController
+
 
 
 
 ## Models (Databases
-
-
-## Frameworks/languages
-
--   Ruby on Rails 4.02
--   Jquerry 
--   Omniouth-facebook 			github.com/mkdynamic/omniouth-facebook turorial https://coderwall.com/p/bsfitw
--   Skeleton design				github.com/dhg/Skeleton
--   Paperclip (photo upload)	github.com/thoughtbot/paperclip
--   Amcharts voor kaart			http://www.amcharts.com/tutorials/your-first-ammap/
+Zie plaatje
 
 ---
