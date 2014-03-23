@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div>
+	<h1> Maak hieronder een nieuwe reis aan! </h1>
+	
+	<% form_for(@journey) do |f| %>
+	    <p>
+		<%= f.label :name %><br/<
+		<%= f.text_field :name %>
+		</P>
+		<p>
+		<%f.submit "Dubmittt" %>
+		</p>
+	<% end %>
+
+	</div>
+</body>
+</html>

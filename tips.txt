@@ -1,0 +1,4 @@
+Tip
+
+Resetten van database werkt alleen met:
+rake db:drop:all gevolgd met rake db:migrate

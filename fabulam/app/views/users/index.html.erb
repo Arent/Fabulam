@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div id="user_nav">
+	  <% if current_user %>
+		Signed in as <strong><%= current_user.name %></strong>!
+		<%= link_to "Sign out", signout_path, id: "sign_out" %>
+	  <% else %>
+		<%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+	  <% end %>
+	</div>
+
+	<div id="travels">
+	Hieronder al je reizen!
+	<% @journey.each do |journey| %>
+        <h2><%=  link_to journey.name, "/users/#{journey.id}"  %></h2>
+	<% end %> 
+	</div>
+	
+	<p><%= link_to "Add a new journey" , new_user_path %> </P>
+
+</body>
+</html>
