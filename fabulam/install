@@ -2857,4 +2857,915 @@ Processing by JourneysController#update as HTML
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.5ms)[0m  [1mUPDATE "journeys" SET "name" = ?, "updated_at" = ? WHERE "journeys"."id" = 8[0m  [["name", "Rusland"], ["updated_at", Wed, 26 Mar 2014 19:33:06 UTC +00:00]]
   [1m[35m (1.9ms)[0m  commit transaction
-Redirected to http://localhost:300
+Redirected to http://localhost:3000/journeys
+Completed 302 Found in 10ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/journeys" for 127.0.0.1 at 2014-03-26 15:33:06 -0400
+Processing by JourneysController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mJourney Load (0.2ms)[0m  SELECT "journeys".* FROM "journeys" WHERE "journeys"."uid" = 100002113682553
+  Rendered journeys/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-26 15:33:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-26 15:33:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-26 15:33:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-26 15:33:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-26 15:33:06 -0400
+
+
+Started GET "/journeys/1" for 127.0.0.1 at 2014-03-26 15:34:09 -0400
+Processing by JourneysController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mJourney Load (0.2ms)[0m  [1mSELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered journeys/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/journeys/8" for 127.0.0.1 at 2014-03-26 15:34:12 -0400
+Processing by JourneysController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mJourney Load (0.2ms)[0m  SELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered journeys/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/journeys/new" for 127.0.0.1 at 2014-03-26 15:34:22 -0400
+Processing by JourneysController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered journeys/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 11.0ms | ActiveRecord: 0.2ms)
+^C[2014-03-26 15:34:38] INFO  going to shutdown ...
+[2014-03-26 15:34:39] INFO  WEBrick::HTTPServer#start done.
+Exiting
+jharvard@appliance (~/railsprojects/fabulam): ^C
+jharvard@appliance (~/railsprojects/fabulam): gti    it a . add
+git: '.' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+	am
+	gc
+	mv
+	rm
+jharvard@appliance (~/railsprojects/fabulam): git d add .
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'fabulam/app/models/journeys.rb' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.
+
+jharvard@appliance (~/railsprojects/fabulam): git add --all
+jharvard@appliance (~/railsprojects/fabulam): git commit\'   "  Tot   alles tot foro              CURD     Rud  UD compleet"
+error: pathspec 'CRUD compleet' did not match any file(s) known to git.
+jharvard@appliance (~/railsprojects/fabulam): git commit
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'jharvard@appliance.(none)')
+jharvard@appliance (~/railsprojects/fabulam): git config --global user.email  "you@example.com"
+jharvard@appliance (~/railsprojects/fabulam): git config --global user.email ""you@example.com""[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"a"r"e"n"t"."s"t"i"e"n"s"a"t"r"[1P"[1P"[1P"t"r"a"@"g"m"a"i"l"."c"o"m"
+jharvard@appliance (~/railsprojects/fabulam): git config --global user.email ""arent.stienstra@gmail.com"[Ajharvard@appliance (~/railsprojects/fabulam): git config --global user.emailmail "a[1P[Aharvard@appliance (~/railsprojects/fabulam): git config --global user.emai "ar[1P[Aharvard@appliance (~/railsprojects/fabulam): git config --global user.ema "are[1P[Aharvard@appliance (~/railsprojects/fabulam): git config --global user.em "aren[1P[Aharvard@appliance (~/railsprojects/fabulam): git config --global user.e "arent[1P[Aharvard@appliance (~/railsprojects/fabulam): git config --global user.n "aren[1@t[Aarvard@appliance (~/railsprojects/fabulam): git config --global user.na "are[1@n[Aarvard@appliance (~/railsprojects/fabulam): git config --global user.nam "ar[1@e[Aarvard@appliance (~/railsprojects/fabulam): git config --global user.name "a[1@r[Aarvard@appliance (~/railsprojects/fabulam): git config --global user.name[K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git config --global user.name "aarent.stienstra@gmail.com"[Asprojects/fabulam): [K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git config --global user.name "aarent.stienstra@gmail.com"m[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"A"r"n"[1P"e"n"t"
+jharvard@appliance (~/railsprojects/fabulam): git config --global user.name "AArent"[Ard@appliance (~/railsprojects/fabulam): git config --global user.email "[21@arent.stienstra@gmail.com""[10Pyou@example.com"[Ae (~/railsprojects/fabulam): git commit[K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git commit
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1          File: .git/COMMIT_EDITMSG                          [4;1H(B[m# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[6d# On branch master[7d# Changes to be committed:[8d#   (use "git reset HEAD <file>..." to unstage)[9d#[10d#   modified:   Gemfile.lock[11d#   modified:   app/controllers/journeys_controller.rb[12d#   new file:   app/models/journey.rb[13d#   deleted:    app/models/journeys.rb[14d#   renamed:    app/views/users/edit.html.erb -> app/views/journeys/edit.htm$[15;1H#   modified:   app/views/journeys/index.html.erb[16d#   modified:   app/views/journeys/new.html.erb[17d#   modified:   app/views/journeys/show.html.erb[18d#   deleted:    app/views/users/index.html.erb[19d#   deleted:    app/views/users/new.html.erb[20d#   deleted:    app/views/users/show.html.erb[21d#   deleted:    app/views/users/user.html.erb[22;31H(B[0;7m[ Read 29 lines ][23d^G(B[m Get Help (B[0;7m^O(B[m WriteOut (B[0;7m^R(B[m Read File(B[0;7m^Y(B[m Prev Page(B[0;7m^K(B[m Cut Text (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit     (B[0;7m^J(B[m Justify  (B[0;7m^W(B[m Where Is (B[0;7m^V(B[m Next Page(B[0;7m^U(B[m UnCut Tex(B[0;7m^T(B[m To Spell[3d[22;13H(B[0;7m[ line 1/30 (3%), col 1/1 (100%), char 0/1109 (0%) ][3d(B[m[22;12H(B[0;7m[ line 4/30 (1[22;38H9 (5%), char 136/1109 (12%) ][6d(B[m[22;19H(B[0;7m5	16[22;37H27 (3[22;52H55[22;62H3[7d(B[m[22;19H(B[0;7m6/30 (20[22;37H48 (2[22;52H82[22;62H6[8d(B[m[22;19H(B[0;7m7	23[22;37H2 (50[22;51H230[61G20[9d(B[m[22;19H(B[0;7m8	26[22;38H9 (3[22;53H2[10d(B[m[22;19H(B[0;7m9/30 (30[22;37H55 (1[22;52H59[22;62H3[11d(B[m[22;11H(B[0;7m[ line 10	33[22;37H38 (2[22;51H312[22;62H8[12d(B[m[22;19H(B[0;7m1	36[22;38H9[22;52H48[61G31[13d(B[m[22;19H(B[0;7m2/30 (40[22;37H82 (1[22;52H85[22;62H4[14d(B[m[22;19H(B[0;7m3	43[22;37H50 (2[22;51H46[22;61H41[15d(B[m[22;19H(B[0;7m4	46[22;37H48[22;51H513[22;62H6[16d(B[m[22;19H(B[0;7m5/30 (50[22;38H9[22;52H59[61G50[17d(B[m[22;19H(B[0;7m6	53[22;38H7[22;51H606[22;62H4[18d(B[m[22;19H(B[0;7m7	56[22;38H5[22;52H51[22;62H8[19d(B[m[22;19H(B[0;7m8/30 (60[22;38H6[22;52H94[61G62[20d(B[m[22;19H(B[0;7m9	63[22;51H738[22;62H6[A(B[m7[2;21r8
+[1;24r[21;1H#   new file:   db/migrate/20140326180356_add_attachment_photo_to_journeys.rb[22;18H(B[0;7m20	66[22;37H78 (1[22;52H82[61G70[A(B[m7[3;21r8
+[1;24r[21;1H#   modified:   db/schema.rb[22;19H(B[0;7m1/30 (70[22;37H29 (3[22;51H858[22;62H7[A(B[m7[3;21r8
+[1;24r[21;1H#   new file:   install[22;19H(B[0;7m2	73[22;38H4 (4[22;52H85[22;62H9[A(B[m7[3;21r8
+[1;24r[21;1H#[22;19H(B[0;7m3	76[22;38H (50[22;51H907[61G81[A(B[m7[3;21r8
+[1;24r[21;1H# Changes not staged for commit:[22;19H(B[0;7m4/30 (80[22;37H33 (3[22;53H9[A(B[m7[3;21r8
+[1;24r[21;1H#   (use "git add <file>..." to update what will be committed)[22;19H(B[0;7m5	83[22;37H63 (1[22;52H42[22;62H4[A(B[m[22;19H(B[0;7m2/30 (7[22;37H24 (4[22;51H885[61G79[18d(B[m[22;19H(B[0;7m1	70[22;38H9 (3[22;52H58[22;62H7[17d(B[m[22;19H(B[0;7m0/30 (66[22;37H78 (1[22;51H782[22;62H0[16d(B[m[22;18H(B[0;7m19	63[22;37H46 (2[22;52H38[61G66[15d(B[m[22;19H(B[0;7m8	60[22;51H694[22;62H2[14d(B[m[22;19H(B[0;7m7/30 (56[22;38H5[22;52H51[61G58[13d(B[m[22;19H(B[0;7m6	53[22;38H7[22;52H06[22;62H4[12d(B[m[22;19H(B[0;7m5	50[22;38H9[22;51H559[22;62H0[11d(B[m[22;19H(B[0;7m4/30 (46[22;38H8[22;52H13[61G46[10d(B[m[22;19H(B[0;7m3	43[22;37H50[22;51H465[22;62H1[9d(B[m[22;19H(B[0;7m2	40[22;37H82 (1[22;51H38[22;61H34[8d(B[m[22;19H(B[0;7m1/30 (36[22;37H39 (2[22;52H48[22;62H1[7d(B[m[22;19H(B[0;7m0	33[22;38H8[22;52H12[61G28[6d(B[m[22;11H (B[0;7m[ line 7/30 (2[22;37H2 (50[22;51H230[22;62H0[3d(B[m[2;21r[2;1H[3T[1;24r[3;1H# On branch master[4d# Changes to be committed:[5d#   (use "git reset HEAD <file>..." to unstage)[22;19H(B[0;7m4/30 (1[22;37H19 (5[22;51H136[61G12[3d(B[m[2;21r[2;1H[3T[1;24r[4;1H# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[22;12H (B[0;7m[ line 1/30 ([22;38H (100%), char 0/1109 (0%) ](B[m[K[3d[22;12H(B[0;7m[ line 4/30 (1[22;38H9 (5%), char 136/1109 (12%) ][6d(B[m[1;68H(B[0;7mModified[6d(B[mT# On branch master[22;11H(B[0;7m[ line 4/30 (13%), col 2/20 (10[22;53H7/1110[6;2H(B[m[1P[22;11H (B[0;7m[ line 4/30 (13%), col 1/19 (5[22;53H6/1109[6d(B[m[22;12H (B[0;7m[ line 3/30 (10%), col 1/68 (1%), char 68[61G6%) ](B[m[K[5d[22;13H (B[0;7m[ line 2/30 (6[22;39H7[22;52H1/1109 (0%) ](B[m[K[4d[22;13H(B[0;7m[ line 1/30 (3%), col 1/1 (100[22;52H0[3d(B[mT[22;35H(B[0;7m2/2[22;52H1/1110[3;2H(B[mo[22;35H(B[0;7m3/3[22;52H2/1111[3;3H(B[mt[22;35H(B[0;7m4/4[22;52H3/1112[3;4H(B[m[22;35H(B[0;7m5/5[22;52H4/1113[3;5H(B[m[22;35H(B[0;7m4/4[22;52H3/1112[3;4H(B[m [22;35H(B[0;7m3/3[22;52H2/1111[3;3H(B[m [22;35H(B[0;7m2/2[22;52H1/1110[3;2H(B[m[K[22;35H(B[0;7m1/1[22;52H0/1109[3d(B[mC[22;35H(B[0;7m2/2[22;52H1/1110[3;2H(B[mr[22;35H(B[0;7m3/3[22;52H2/1111[3;3H(B[mu[22;35H(B[0;7m4/4[22;52H3/1112[3;4H(B[mu[22;35H(B[0;7m5/5[22;52H4/1113[3;5H(B[m [22;35H(B[0;7m4/4[22;52H3/1112[3;4H(B[m [22;35H(B[0;7m3/3[22;52H2/1111[3;3H(B[m [22;35H(B[0;7m2/2[22;52H1/1110[3;2H(B[mR[22;35H(B[0;7m3/3[22;52H2/1111[3;3H(B[mU[22;35H(B[0;7m4/4[22;52H3/1112[3;4H(B[mD[22;35H(B[0;7m5/5[22;52H4/1113[3;5H(B[m[22;35H(B[0;7m6/6[22;52H5/1114[3;6H(B[mc[22;35H(B[0;7m7/7[22;52H6/1115[3;7H(B[mo[22;35H(B[0;7m8/8[22;52H7/1116[3;8H(B[mm[22;35H(B[0;7m9/9[22;52H8/1117[3;9H(B[mp[22;12H(B[0;7m[ line 1/30 (3%), col 10/10 (100%), char 9/1118 (0%) ][3;10H(B[ml[22;35H(B[0;7m1/11[22;53H10/1119 (0%) ][3;11H(B[me[22;35H(B[0;7m2/12[22;54H1/1120[3;12H(B[me[22;35H(B[0;7m3/13[22;54H2/1121 (1[3;13H(B[mt[22;35H(B[0;7m4/14[22;54H3/1122[3;14H(B[m7[4;21r8[4dM[1;24r[22;12H (B[0;7m[ line 2/31 (6%), col 1/1 (100%), char 14/1123(B[m[1P[4d^[22;35H(B[0;7m2/2[22;53H5/1124[4;2H(B[mO[22;35H(B[0;7m3/3[22;53H6/1125[4;3H(B[m7[5;21r8[5dM[1;24r[22;20H(B[0;7m3/32 (9[22;35H1/1[22;53H7/1126[5d(B[m[5;21r[21;1H
+[1;24r[21;1H#   deleted:    app/views/users/show.html.erb[22;20H(B[0;7m2/31 (6[22;35H3/3[22;53H6/1125[4;3H(B[m [22;35H(B[0;7m2/2[22;53H5/1124[4;2H(B[m[K[22;35H(B[0;7m1/1[22;53H4/1123[4d(B[m[22;12H(B[0;7m[ line 5/31 (1[22;38H9 (5%), char 150[22;62H3%) ][7d(B[m[22;19H(B[0;7m8/31 (25[22;37H2 (50[22;51H244[61G21[10d(B[m[22;19H(B[0;7m9	29[22;38H9 (3[22;53H6[11d(B[m[22;11H(B[0;7m[ line 10/31 (32[22;37H55 (1[22;52H73[22;62H4[12d(B[m[22;19H(B[0;7m1	35[22;37H38 (2[22;51H326[22;62H9[13d(B[m[22;19H(B[0;7m2	38[22;38H9[22;52H62[61G32[14d(B[m[22;19H(B[0;7m3/31 (41[22;37H82 (1[22;52H99[22;62H5[15d(B[m[22;19H(B[0;7m4	45[22;37H50 (2[22;51H47[22;61H42[16d(B[m[22;19H(B[0;7m5	48[22;37H48[22;51H527[22;62H6[17d(B[m[22;19H(B[0;7m6/31 (51[22;38H9[22;52H73[61G51[18d(B[m[22;19H(B[0;7m7	54[22;38H7[22;51H620[22;62H5[19d(B[m[22;19H(B[0;7m8	58[22;38H5[22;52H65[22;62H9[20d(B[m[22;19H(B[0;7m9/31 (61[22;38H6[22;51H708[61G63[A(B[m7[3;21r8
+[1;24r[21;1H#   deleted:    app/views/users/user.html.erb[22;18H(B[0;7m20	64[22;52H52[22;62H6[A(B[m7[2;21r8
+[1;24r[21;1H#   new file:   db/migrate/20140326180356_add_attachment_photo_to_journeys.rb[22;19H(B[0;7m1	67[22;37H78 (1[22;52H96[61G70[A(B[m7[3;21r8
+[1;24r[21;1H#   modified:   db/schema.rb[22;19H(B[0;7m2/31 (70[22;37H29 (3[22;51H872[22;62H7[A(B[m7[3;21r8
+[1;24r[21;1H#   new file:   install[22;19H(B[0;7m3	74[22;38H4 (4[22;52H99[61G80[A(B[m7[3;21r8
+[1;24r[21;1H#[22;19H(B[0;7m4	77[22;38H (50[22;51H921[22;62H2[A(B[m7[3;21r8
+[1;24r[21;1H# Changes not staged for commit:[22;19H(B[0;7m5/31 (80[22;37H33 (3[22;53H3[A(B[m7[3;21r8
+[1;24r[21;1H#   (use "git add <file>..." to update what will be committed)[22;19H(B[0;7m6	83[22;37H63 (1[22;52H56[22;62H5[A(B[m7[3;21r8
+[1;24r[21;1H#   (use "git checkout -- <file>..." to discard changes in working directory)[22;19H(B[0;7m7	87[22;37H78[22;51H1019/1123 (90%) ][A(B[m7[3;21r8[2S[1;24r[20;1H#[21d#   modified:   install[22;19H(B[0;7m9/31 (93[22;37H24 (4[22;53H9[22;63H7[A(B[m7[3;21r8
+[1;24r[21;1H#[22;18H(B[0;7m30	96[22;38H (50[22;52H121[22;63H9[A(B[m7[3;21r8
+[1;24r[22;9H(B[0;7m[ line 31/31 (100%), col 1/1 (10[22;54H3[62G100%) ][A(B[m:[22;9H (B[0;7m[ line 31/32 (96[22;34H2/2[22;54H4/1125 (99%) ](B[m[K[A:[K[22;34H(B[0;7m1/1[22;54H3/1124[A(B[m:[22;34H(B[0;7m2/2[22;54H4/1125[A[C(B[mz[22;34H(B[0;7m3/3[22;54H5/1126[21;3H(B[m [22;34H(B[0;7m2/2[22;54H4/1125[A[C(B[mx[22;34H(B[0;7m3/3[22;54H5/1126[21;3H(B[m7[2;21r8[10S[1;24r[2;1H[K[22;18H(B[0;7m2/33[22;34H1/1[22;54H6/1127[12d(B[m[22;9H(B[0;7m[ line 33/33 (100[22;54H7[62G100%) ][13d(B[m[22;9H  (B[0;7m[ line 30/33 (90%), col 1/2 (5[22;54H1[62G99%) ](B[m[K[10d[22;18H(B[0;7m29/33 (87[22;38H4 (4[22;52H099[22;63H7[9d(B[m[22;19H(B[0;7m8	84[22;38H (50[22;54H7[8d(B[m[22;19H(B[0;7m7	81[22;37H78 (1[22;53H19[22;63H0[7d(B[m[22;19H(B[0;7m6/33 (78[22;37H63[22;51H956/1127 (84%) ](B[m[K[6d[22;19H(B[0;7m5	75[22;37H33 (3[22;52H23[22;62H1[5d(B[m[22;19H(B[0;7m4	72[22;37H2 (50[22;53H1[4d(B[m[22;19H(B[0;7m3/33 (69[22;38H4 (4[22;51H899[61G79[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   modified:   db/schema.rb[22;19H(B[0;7m2	66[22;38H9 (3[22;52H72[22;62H7[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   new file:   db/migrate/20140326180356_add_attachment_photo_to_journeys.rb[22;19H(B[0;7m1	63[22;37H78 (1[22;51H796[22;62H0[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   deleted:    app/views/users/user.html.erb[22;19H(B[0;7m0	60[22;37H46 (2[22;52H52[61G66[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   deleted:    app/views/users/show.html.erb[22;18H(B[0;7m19/33 (57[22;52H08[22;62H2[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   deleted:    app/views/users/new.html.erb[22;19H(B[0;7m8	54[22;38H5[22;51H665[61G59[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   deleted:    app/views/users/index.html.erb[22;19H(B[0;7m7	51[22;38H7[22;52H20[22;62H5[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   modified:   app/views/journeys/show.html.erb[22;19H(B[0;7m6/33 (48[22;38H9[22;51H573[22;62H0[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   modified:   app/views/journeys/new.html.erb[22;19H(B[0;7m5	45[22;38H8[22;52H27[61G46[3d(B[m[2;21r[2;1H[3T[1;24r[3;1H#   deleted:    app/models/journeys.rb[4d#   renamed:    app/views/users/edit.html.erb -> app/views/journeys/edit.htm$[5;1H#   modified:   app/views/journeys/index.html.erb[22;19H(B[0;7m2/33 (36[22;37H39[22;51H362[61G32[3d(B[m[2;21r[2;1H[3T[1;24r[3;1H#   modified:   Gemfile.lock[4d#   modified:   app/controllers/journeys_controller.rb[5d#   new file:   app/models/journey.rb[22;11H (B[0;7m[ line 9/33 (27[22;37H29 (3[22;51H246[61G21[3d(B[m[2;21r[2;1H[3T[1;24r[3;1H# Changes to be committed:[4d#   (use "git reset HEAD <file>..." to unstage)[5d#[22;19H(B[0;7m6/33 (18[22;38H7[22;51H169[61G14[3d(B[m[2;21r[2;1HM[1;24r[3;1H# On branch master[22;19H(B[0;7m5	15[22;37H19 (5[22;52H50[22;62H3[3d(B[m[2;21r[2;1HM[1;24r[3;1H# with '#' will be ignored, and an empty message aborts the commit.[22;12H (B[0;7m[ line 4/33 (12%), col 1/68 (1%), char 82[61G7%) ](B[m[K[3d[2;21r[2;1HM[1;24r[3;1H# Please enter the commit message for your changes. Lines starting[22;20H(B[0;7m3/33 (9%), col 1/67 (1%), char 15/1127 (1%) ](B[m[K[3d[2;21r[2;1HM[1;24r[22;20H(B[0;7m2/33 (6[22;37H1 (100%), char 14/1127 (1%) ][3d(B[m[2;21r[2;1HM[1;24r[3;1HCRUD compleet[22;13H (B[0;7m[ line 1/33 (3%), col 1/14 (7[22;52H0/1127 (0%) ](B[m[K[3d[22;13H(B[0;7m[ line 4/33 (12[22;38H68 (1[22;52H82/1127 (7%) ][6d(B[m[22;12H(B[0;7m[ line 7/33 (21%), col 1/48 (2%), char 196[61G17%) ][9d(B[m[22;19H(B[0;7m8	24[22;37H2 (50[22;51H244[61G21[10d(B[m[22;19H(B[0;7m9	27[22;38H9 (3[22;53H6[11d(B[m[22;11H(B[0;7m[ line 10/33 (30[22;37H55 (1[22;52H73[22;62H4[12d(B[m[22;19H(B[0;7m1	33[22;37H38 (2[22;51H326[22;62H8[13d(B[m[22;19H(B[0;7m2	36[22;38H9[22;52H62[61G32[14d(B[m[22;19H(B[0;7m3	39[22;37H82 (1[22;52H99[22;62H5[15d(B[m[22;19H(B[0;7m4/33 (42[22;37H50 (2[22;51H47[22;61H42[16d(B[m[22;19H(B[0;7m5	45[22;37H48[22;51H527[22;62H6[17d(B[m[22;19H(B[0;7m6	48[22;38H9[22;52H73[61G50[18d(B[m[22;19H(B[0;7m7/33 (51[22;38H7[22;51H620[22;62H5[19d(B[m[22;19H(B[0;7m8	54[22;38H5[22;52H65[22;62H9[20d(B[m[22;19H(B[0;7m9	57[22;38H6[22;51H708[61G62[A(B[m7[3;21r8
+[1;24r[21;1H#   deleted:    app/views/users/user.html.erb[22;18H(B[0;7m20/33 (60[22;52H52[22;62H6[A(B[m7[2;21r8
+[1;24r[21;1H#   new file:   db/migrate/20140326180356_add_attachment_photo_to_journeys.rb[22;19H(B[0;7m1	63[22;37H78 (1[22;52H96[61G70[A(B[m7[3;21r8
+[1;24r[21;1H#   modified:   db/schema.rb[22;19H(B[0;7m2	66[22;37H29 (3[22;51H872[22;62H7[A(B[m7[3;21r8
+[1;24r[21;1H#   new file:   install[22;19H(B[0;7m3	69[22;38H4 (4[22;52H99[22;62H9[A(B[m7[3;21r8
+[1;24r[21;1H#[22;19H(B[0;7m4/33 (72[22;38H (50[22;51H921[61G81[A(B[m7[3;21r8
+[1;24r[21;1H# Changes not staged for commit:[22;19H(B[0;7m5	75[22;37H33 (3[22;53H3[A(B[m7[3;21r8[3S[1;24r[19;1H#   (use "git add <file>..." to update what will be committed)[20d#   (use "git checkout -- <file>..." to discard changes in working directory)[21;1H#[22;19H(B[0;7m8/33 (84[22;37H2 (50[22;51H1097/1127 (97%) ][A(B[m7[3;21r8[3S[1;24r[19;1H#   modified:   install[20d#[21d:x[22;18H(B[0;7m31/33 (93[22;37H3 (33[22;52H123[22;63H9[A(B[m7[3;21r8[2S[1;24r[22;9H(B[0;7m[ line 33/33 (100%), col 1/1 (100[22;54H7[62G100%) ][A(B[m[22;17H(B[0;7m2/32[22;54H6/1126[20d(B[m[22;9H (B[0;7m[ line 31/32 (96[22;34H3/3[22;54H5[62G99%) ](B[m[K[19;3H [22;34H(B[0;7m2/2[22;54H4/1125[19;2H(B[m[K[22;34H(B[0;7m1/1[22;54H3/1124[19d(B[m[22;9H(B[0;7m[ line 32/32 (100[22;54H4[62G100%) ][20d(B[mX[22;9H (B[0;7m[ line 32/33 (96[22;34H2/2[22;54H5/1126 (99%) ](B[m[K[20dX^[22;34H(B[0;7m3/3[22;54H6/1127[20;3H(B[mX[22;34H(B[0;7m4/4[22;54H7/1128[20;4H(B[mX[22;34H(B[0;7m5/5[22;54H8/1129[20;5H(B[mX[22;34H(B[0;7m6/6[22;54H9/1130[20;6H(B[mX[22;34H(B[0;7m7/7[22;53H30/1131[20;7H(B[m [22;34H(B[0;7m6/6[22;53H29/1130[20;6H(B[m [22;34H(B[0;7m5/5[22;54H8/1129[20;5H(B[m [22;34H(B[0;7m4/4[22;54H7/1128[20;4H(B[m [22;34H(B[0;7m3/3[22;54H6/1127[20;3H(B[m [22;34H(B[0;7m2/2[22;54H5/1126[20;2H(B[m[K[22;34H(B[0;7m1/1[22;54H4/1125[20d(B[mi[22;34H(B[0;7m2/2[22;54H5/1126[20;2H(B[m[K[22;34H(B[0;7m1/1[22;54H4/1125[20d(B[mI[22;34H(B[0;7m2/2[22;54H5/1126[20;2H(B[m[K[22;34H(B[0;7m1/1[22;54H4/1125[20d(B[m[22;10H (B[0;7m[ line 29/33 (87%), col 1/24 (4[22;52H099[22;63H7[17d(B[m[22;19H(B[0;7m6/33 (78[22;37H63 (1[22;51H956/1125 (84%) ](B[m[K[14d[22;19H(B[0;7m5	75[22;37H33 (3[22;52H23[22;62H2[13d(B[m[22;19H(B[0;7m4	72[22;37H2 (50[22;53H1[22;62H1[12d(B[m[22;19H(B[0;7m3/33 (69[22;38H4 (4[22;51H899[61G79[11d(B[m[22;19H(B[0;7m2	66[22;38H9 (3[22;52H72[22;62H7[10d(B[m[22;19H(B[0;7m1	63[22;37H78 (1[22;51H796[22;62H0[9d(B[m[22;19H(B[0;7m0	60[22;37H46 (2[22;52H52[61G66[8d(B[m[22;18H(B[0;7m19/33 (57[22;52H08[22;62H2[7d(B[m[22;19H(B[0;7m8	54[22;38H5[22;51H665[61G59[6d(B[m[22;19H(B[0;7m7	51[22;38H7[22;52H20[22;62H5[5d(B[m[22;19H(B[0;7m6/33 (48[22;38H9[22;51H573[22;62H0[4d(B[m[22;19H(B[0;7m5	45[22;38H8[22;52H27[61G46[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   modified:   app/views/journeys/index.html.erb[22;19H(B[0;7m4	42[22;37H50[22;51H479[22;62H2[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   renamed:    app/views/users/edit.html.erb -> app/views/journeys/edit.htm$[22;19H(B[0;7m3/33 (39[22;37H82 (1[22;51H39[22;61H35[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   deleted:    app/models/journeys.rb[22;19H(B[0;7m2	36[22;37H39 (2[22;52H62[22;62H2[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   new file:   app/models/journey.rb[22;19H(B[0;7m1	33[22;38H8[22;52H26[61G28[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   modified:   app/controllers/journeys_controller.rb[22;19H(B[0;7m0	30[22;37H55 (1[22;51H273[22;62H4[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   modified:   Gemfile.lock[22;11H (B[0;7m[ line 9/33 (27[22;37H29 (3[22;52H46[22;62H1[3d(B[m[2;21r[2;1HM[1;24r[3;1H#[22;19H(B[0;7m8	24[22;38H (50[22;53H4[3d(B[m[2;21r[2;1HM[1;24r[3;1H#   (use "git reset HEAD <file>..." to unstage)[22;19H(B[0;7m7	21[22;37H48 (2[22;51H196[61G17[3d(B[m[2;21r[2;1HM[1;24r[3;1H# Changes to be committed:[22;19H(B[0;7m6/33 (18[22;37H27 (3[22;52H69[22;62H5[3d(B[m[2;21r[2;1HM[1;24r[3;1H# On branch master[22;19H(B[0;7m5	15[22;37H19 (5[22;52H50[22;62H3[3d(B[m[2;21r[2;1H[3T[1;24r[4;1H# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[22;12H (B[0;7m[ line 2/33 (6[22;38H (100%), char 14[22;62H%) ](B[m[K[3d[22;12H(B[0;7m[ line 5/33 (15[22;38H9 (5%), char 150[22;62H3%) ][6d(B[m[22;12H (B[0;7m[ line 4/33 (12%), col 1/68 (1%), char 82[61G7%) ](B[m[K[5d[22;20H(B[0;7m3/33 (9%), col 1/67 (1%), char 15/1125 (1%) ](B[m[K[4d[22;20H(B[0;7m2/33 (6[22;37H1 (100%), char 14/1125 (1%) ][3d(B[m[2;21r[2;1HM[1;24r[3;1HCRUD compleet[22;13H (B[0;7m[ line 1/33 (3%), col 1/14 (7[22;52H0/1125 (0%) ](B[m[K[3d[22;13H(B[0;7m[ line 4/33 (12[22;38H68 (1[22;52H82/1125 (7%) ][6d(B[m[22;12H(B[0;7m[ line 5/33 (15%), col 1/19 (5%), char 150[61G13%) ][7d(B[m[22;19H(B[0;7m6	18[22;37H27 (3[22;52H69[22;62H5[8d(B[m[22;19H(B[0;7m7/33 (21[22;37H48 (2[22;52H96[22;62H7[9d(B[m[22;19H(B[0;7m8	24[22;37H2 (50[22;51H244[61G21[10d(B[m[22;19H(B[0;7m9	27[22;38H9 (3[22;53H6[11d(B[m[22;11H(B[0;7m[ line 10/33 (30[22;37H55 (1[22;52H73[22;62H4[12d(B[m[22;19H(B[0;7m1	33[22;37H38 (2[22;51H326[22;62H8[13d(B[m[22;19H(B[0;7m2	36[22;38H9[22;52H62[61G32[14d(B[m[22;19H(B[0;7m3	39[22;37H82 (1[22;52H99[22;62H5[15d(B[m[22;19H(B[0;7m4/33 (42[22;37H50 (2[22;51H47[22;61H42[16d(B[m[22;19H(B[0;7m5	45[22;37H48[22;51H527[22;62H6[17d(B[m[22;19H(B[0;7m6	48[22;38H9[22;52H73[61G50[18d(B[m[22;19H(B[0;7m7/33 (51[22;38H7[22;51H620[22;62H5[19d(B[m[22;19H(B[0;7m8	54[22;38H5[22;52H65[22;62H9[20d(B[m[22;19H(B[0;7m9	57[22;38H6[22;51H708[61G62[A(B[m7[3;21r8
+[1;24r[21;1H#   deleted:    app/views/users/user.html.erb[22;18H(B[0;7m20/33 (60[22;52H52[22;62H6[A(B[m7[2;21r8
+[1;24r[21;1H#   new file:   db/migrate/20140326180356_add_attachment_photo_to_journeys.rb[22;19H(B[0;7m1	63[22;37H78 (1[22;52H96[61G70[A(B[m7[3;21r8
+[1;24r[21;1H#   modified:   db/schema.rb[22;19H(B[0;7m2	66[22;37H29 (3[22;51H872[22;62H7[A(B[m7[3;21r8
+[1;24r[21;1H#   new file:   install[22;19H(B[0;7m3	69[22;38H4 (4[22;52H99[22;62H9[A(B[m7[3;21r8
+[1;24r[21;1H#[22;19H(B[0;7m4/33 (72[22;38H (50[22;51H921[61G81[A(B[m7[3;21r8
+[1;24r[21;1H# Changes not staged for commit:[22;19H(B[0;7m5	75[22;37H33 (3[22;53H3[22;62H2[A(B[m7[3;21r8
+[1;24r[21;1H#   (use "git add <file>..." to update what will be committed)[22;19H(B[0;7m6	78[22;37H63 (1[22;52H56[22;62H4[A(B[m7[3;21r8[2S[1;24r[20;1H#   (use "git checkout -- <file>..." to discard changes in working directory)[21;1H#[22;19H(B[0;7m8/33 (84[22;37H2 (50[22;51H1097/1125 (97%) ][A(B[m7[3;21r8[3S[1;24r[19;1H#   modified:   install[20d#[22;10H(B[0;7m[ line 31/33 (93%), col 1/1 (10[22;52H123[22;63H9[A(B[m7[3;21r8[2S[1;24r[22;9H(B[0;7m[ line 33/33 (100[22;54H5[62G100%) ][A(B[m[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                 [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No           (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: .git/COMMIT_EDITMSG                     [23d^G(B[m Get Help[23;20H(B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append[23;58H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel	   (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend[22;40H[23d[39;49m(B[m[J[1;68H(B[0;7m        [22;29H(B[m[1K (B[0;7m[ Wrote 32 lines ](B[m[K[24;77H[24;1H[?1049l[?1l>[master 2a74581] CRUD compleet
+ 15 files changed, 2936 insertions(+), 110 deletions(-)
+ create mode 100644 fabulam/app/models/journey.rb
+ delete mode 100644 fabulam/app/models/journeys.rb
+ rename fabulam/app/views/{users => journeys}/edit.html.erb (61%)
+ delete mode 100644 fabulam/app/views/users/index.html.erb
+ delete mode 100644 fabulam/app/views/users/new.html.erb
+ delete mode 100644 fabulam/app/views/users/show.html.erb
+ delete mode 100644 fabulam/app/views/users/user.html.erb
+ create mode 100644 fabulam/db/migrate/20140326180356_add_attachment_photo_to_journeys.rb
+ create mode 100644 fabulam/install
+jharvard@appliance (~/railsprojects/fabulam): git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+jharvard@appliance (~/railsprojects/fabulam): git push https://github.com/Are nt/Fabulam
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': git config --global push.default simple
+Password for 'https://git config --global push.default simple@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Arent/Fabulam/'
+jharvard@appliance (~/railsprojects/fabulam): git push https://github.com/Arennt/Fabulam[Appliance (~/railsprojects/fabulam): git push[K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git push https://github.com/Arennt/Fabulam[Appliance (~/railsprojects/fabulam): [K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git push https://github.com/Arennt/Fabulam[Appliance (~/railsprojects/fabulam): git push[K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git push https://github.com/Arennt/Fabulam[Appliance (~/railsprojects/fabulam): [K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git push https://github.com/Arennt/Fabulam[Appliance (~/railsprojects/fabulam): git push[K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git pushcommit[2Ppush https://github.com/Arennt/Fabulam[Appliance (~/railsprojects/fabulam): [K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git config = --global push.defauk t [Ajharvard@appliance (~/railsprojects/fabulam): git config --global push.defauk [K[Ajharvard@appliance (~/railsprojects/fabulam): git config --global push.defau[K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git config --global push.defau ul t Arent
+jharvard@appliance (~/railsprojects/fabulam): git push
+error: Malformed value for push.default: Arent
+error: Must be one of nothing, matching, simple, upstream or current.
+fatal: bad config file line 6 in /home/jharvard/.gitconfig
+jharvard@appliance (~/railsprojects/fabulam): git push
+error: Malformed value for push.default: Arent
+error: Must be one of nothing, matching, simple, upstream or current.
+fatal: bad config file line 6 in /home/jharvard/.gitconfig
+jharvard@appliance (~/railsprojects/fabulam): 
+jharvard@appliance (~/railsprojects/fabulam): git pushconfig --global push.defaultt Arent[Ad@appliance (~/railsprojects/fabulam): git push https://github.com/Arent/Fabulam[Appliance (~/railsprojects/fabulam): git push[K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git push https://github.com/Arennt/Fabulam[Appliance (~/railsprojects/fabulam): git config --global push.default[3P Arent[Ad@appliance (~/railsprojects/fabulam): git push https://github.com/Arent/Fabulam
+error: Malformed value for push.default: Arent
+error: Must be one of nothing, matching, simple, upstream or current.
+fatal: bad config file line 6 in /home/jharvard/.gitconfig
+jharvard@appliance (~/railsprojects/fabulam): git push https://github.com/Arennt/Fabulam[Appliance (~/railsprojects/fabulam): git push[K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): git pushconfig --global push.defaultt Arent     simple
+jharvard@appliance (~/railsprojects/fabulam): git config --global push.defaultt simple[A@appliance (~/railsprojects/fabulam): git push https://github.com/Arent/Fabulam
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/Arent/Fabulam master
+
+jharvard@appliance (~/railsprojects/fabulam): git push --set-upstream https:/ /github.com/Arent/Fabulam master
+Username for 'https://github.com': Arent
+Password for 'https://Arent@github.com': 
+Counting objects: 36, done.
+Compressing objects:   5% (1/20)   Compressing objects:  10% (2/20)   Compressing objects:  15% (3/20)   Compressing objects:  20% (4/20)   Compressing objects:  25% (5/20)   Compressing objects:  30% (6/20)   Compressing objects:  35% (7/20)   Compressing objects:  40% (8/20)   Compressing objects:  45% (9/20)   Compressing objects:  50% (10/20)   Compressing objects:  55% (11/20)   Compressing objects:  60% (12/20)   Compressing objects:  65% (13/20)   Compressing objects:  70% (14/20)   Compressing objects:  75% (15/20)   Compressing objects:  80% (16/20)   Compressing objects:  85% (17/20)   Compressing objects:  90% (18/20)   Compressing objects:  95% (19/20)   Compressing objects: 100% (20/20)   Compressing objects: 100% (20/20), done.
+Writing objects:   5% (1/20)   Writing objects:  10% (2/20)   Writing objects:  15% (3/20)   Writing objects:  20% (4/20)   Writing objects:  25% (5/20)   Writing objects:  30% (6/20)   Writing objects:  35% (7/20)   Writing objects:  40% (8/20)   Writing objects:  45% (9/20)   Writing objects:  50% (10/20)   Writing objects:  55% (11/20)   Writing objects:  60% (12/20)   Writing objects:  65% (13/20)   Writing objects:  70% (14/20)   Writing objects:  75% (15/20)   Writing objects:  80% (16/20)   Writing objects:  85% (17/20)   Writing objects:  90% (18/20)   Writing objects:  95% (19/20)   Writing objects: 100% (20/20)   Writing objects: 100% (20/20), 17.07 KiB | 0 bytes/s, done.
+Total 20 (delta 8), reused 0 (delta 0)
+To https://github.com/Arent/Fabulam
+   ae62707..2a74581  master -> master
+Branch master set up to track remote branch master from https://github.com/Arent/Fabulam.
+jharvard@appliance (~/railsprojects/fabulam): bub ndle install
+Fetching gem metadata from https://rubygems.org/........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.1.1)
+Using i18n (0.6.9)
+Using minitest (4.7.5)
+Using multi_json (1.8.4)
+Using atomic (1.1.15)
+Using thread_safe (0.2.0)
+Using tzinfo (0.3.38)
+Using activesupport (4.0.2)
+Using builder (3.1.4)
+Using erubis (2.7.0)
+Using rack (1.5.2)
+Using rack-test (0.6.2)
+Using actionpack (4.0.2)
+Using mime-types (1.25.1)
+Using polyglot (0.3.4)
+Using treetop (1.4.15)
+Using mail (2.5.4)
+Using actionmailer (4.0.2)
+Using activemodel (4.0.2)
+Using activerecord-deprecated_finders (1.0.3)
+Using arel (4.0.2)
+Using activerecord (4.0.2)
+Using bundler (1.5.3)
+Using json (1.8.1)
+Installing carrierwave (0.10.0)
+Using climate_control (0.0.3)
+Using cocaine (0.5.3)
+Using coffee-script-source (1.7.0)
+Using execjs (2.0.2)
+Using coffee-script (2.2.0)
+Using thor (0.18.1)
+Using railties (4.0.2)
+Using coffee-rails (4.0.1)
+Using multipart-post (2.0.0)
+Using faraday (0.9.0)
+Using hashie (2.0.5)
+Using hike (1.2.3)
+Using jbuilder (1.5.3)
+Using jquery-rails (3.1.0)
+Using jwt (0.1.11)
+Using multi_xml (0.5.5)
+Using oauth2 (0.9.3)
+Using omniauth (1.2.1)
+Using omniauth-oauth2 (1.1.2)
+Using omniauth-facebook (1.6.0)
+Using paperclip (4.1.1) from git://github.com/thoughtbot/paperclip.git (at master)
+Using tilt (1.4.1)
+Using sprockets (2.11.0)
+Using sprockets-rails (2.0.1)
+Using rails (4.0.2)
+Using rdoc (4.1.1)
+Using sass (3.2.14)
+Using sass-rails (4.0.1)
+Using sdoc (0.4.0)
+Using sqlite3 (1.3.9)
+Using turbolinks (2.2.1)
+Using uglifier (2.4.0)
+[32mYour bundle is complete![0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+jharvard@appliance (~/railsprojects/fabulam): bundle show carrierwave
+/home/jharvard/.gem/ruby/gems/carrierwave-0.10.0
+jharvard@appliance (~/railsprojects/fabulam): rails f g image uploader              uploader image
+[1m[32m      create[0m  app/uploaders/image_uploader.rb
+jharvard@appliance (~/railsprojects/fabulam): rails g migrationn  A add_image_toj ourneys       [Ajharvard@appliance (~/railsprojects/fabulam): rails g migration add_image_toj [K[Ajharvard@appliance (~/railsprojects/fabulam): rails g migration add_image_to[K
+[K[Ajharvard@appliance (~/railsprojects/fabulam): rails g migration add_image_to o_ journeys imgae   age:stron  ing
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20140326200200_add_image_to_journeys.rb
+jharvard@appliance (~/railsprojects/fabulam): bubdle e      ndle exec rake db:migrate
+==  AddImageToJourneys: migrating =============================================
+-- add_column(:journeys, :image, :string)
+   -> 0.0013s
+==  AddImageToJourneys: migrated (0.0019s) ====================================
+
+jharvard@appliance (~/railsprojects/fabulam): bubdle    ndle
+Fetching gem metadata from https://rubygems.org/........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.1.1)
+Using i18n (0.6.9)
+Using minitest (4.7.5)
+Using multi_json (1.8.4)
+Using atomic (1.1.15)
+Using thread_safe (0.2.0)
+Using tzinfo (0.3.38)
+Using activesupport (4.0.2)
+Using builder (3.1.4)
+Using erubis (2.7.0)
+Using rack (1.5.2)
+Using rack-test (0.6.2)
+Using actionpack (4.0.2)
+Using mime-types (1.25.1)
+Using polyglot (0.3.4)
+Using treetop (1.4.15)
+Using mail (2.5.4)
+Using actionmailer (4.0.2)
+Using activemodel (4.0.2)
+Using activerecord-deprecated_finders (1.0.3)
+Using arel (4.0.2)
+Using activerecord (4.0.2)
+Using bundler (1.5.3)
+Using json (1.8.1)
+Using carrierwave (0.10.0)
+Using climate_control (0.0.3)
+Using cocaine (0.5.3)
+Using coffee-script-source (1.7.0)
+Using execjs (2.0.2)
+Using coffee-script (2.2.0)
+Using thor (0.18.1)
+Using railties (4.0.2)
+Using coffee-rails (4.0.1)
+Using multipart-post (2.0.0)
+Using faraday (0.9.0)
+Using hashie (2.0.5)
+Using hike (1.2.3)
+Using jbuilder (1.5.3)
+Using jquery-rails (3.1.0)
+Using jwt (0.1.11)
+Using multi_xml (0.5.5)
+Using oauth2 (0.9.3)
+Using omniauth (1.2.1)
+Using omniauth-oauth2 (1.1.2)
+Using omniauth-facebook (1.6.0)
+Using paperclip (4.1.1) from git://github.com/thoughtbot/paperclip.git (at master)
+Using tilt (1.4.1)
+Using sprockets (2.11.0)
+Using sprockets-rails (2.0.1)
+Using rails (4.0.2)
+Using rdoc (4.1.1)
+
+[33mGem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+    /usr/bin/ruby extconf.rb 
+checking for Ruby version >= 1.8.5... yes
+checking for clang... yes
+checking for Magick-config... no
+Can't install RMagick 2.13.2. Can't find Magick-config in /etc/log50.d:/etc/log50.d:/usr/lib/qt-3.3/bin:/etc/log50.d:/usr/libexec/lightdm:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/jharvard/.local/bin:/home/jharvard/bin
+
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/ruby
+
+
+Gem files will remain installed in /home/jharvard/.gem/ruby/gems/rmagick-2.13.2 for inspection.
+Results logged to /home/jharvard/.gem/ruby/gems/rmagick-2.13.2/ext/RMagick/gem_make.out
+[0m[31mAn error occurred while installing rmagick (2.13.2), and Bundler cannot
+continue.
+Make sure that `gem install rmagick -v '2.13.2'` succeeds before bundling.[0m
+jharvard@appliance (~/railsprojects/fabulam): `gem install rmagick -v '2.13.2 '
+> 
+> `gem install rmagick -v '2.13.2'
+[A> bundle[K
+[K[A> bundle> `gem install rmagick -v '2.13.2'
+[A> bundle[K
+[K[A> bundle^C
+jharvard@appliance (~/railsprojects/fabulam): `gem install rmagick -v '2.13.2''
+[K[A' [Ajharvard@appliance (~/railsprojects/fabulam): `gem install rmagick -v '2.13.2 [K[Ajharvard@appliance (~/railsprojects/fabulam): `gem install rmagick -v '2.13.'2.13.
+[Ajharvard@appliance (~/railsprojects/fabulam): `gem install rmagick -v '2.13. '[1P
+[K[Ajharvard@appliance (~/railsprojects/fabulam): `gem install rmagick -v [1P
+Building native extensions.  This could take a while...
+ERROR:  Error installing rmagick:
+	ERROR: Failed to build gem native extension.
+
+    /usr/bin/ruby extconf.rb
+checking for Ruby version >= 1.8.5... yes
+checking for clang... yes
+checking for Magick-config... no
+Can't install RMagick 2.13.2. Can't find Magick-config in /etc/log50.d:/etc/log50.d:/usr/lib/qt-3.3/bin:/etc/log50.d:/usr/libexec/lightdm:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/jharvard/.local/bin:/home/jharvard/bin
+
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/ruby
+
+
+Gem files will remain installed in /home/jharvard/.gem/ruby/gems/rmagick-2.13.2 for inspection.
+Results logged to /home/jharvard/.gem/ruby/gems/rmagick-2.13.2/ext/RMagick/gem_make.out
+jharvard@appliance (~/railsprojects/fabulam): rails s
+[31mCould not find gem 'rmagick (>= 0) ruby' in the gems available on this machine.[0m
+[33mRun `bundle install` to install missing gems.[0m
+jharvard@appliance (~/railsprojects/fabulam): rails s
+=> Booting WEBrick
+=> Rails 4.0.2 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2014-03-26 16:15:57] INFO  WEBrick 1.3.1
+[2014-03-26 16:15:57] INFO  ruby 2.0.0 (2013-11-22) [i386-linux]
+[2014-03-26 16:15:57] INFO  WEBrick::HTTPServer#start: pid=24104 port=3000
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-26 16:16:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#home as HTML
+  [1m[35mUser Load (6.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/home.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 187ms (Views: 129.8ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-26 16:16:07 -0400
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-03-26 16:16:09 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-26 16:16:09 -0400
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-03-26 16:16:10 -0400
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-03-26 16:16:10 -0400
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQDu26PiJsnuovItoFdz9fHObUnp2sHHDlHxeBjAOWjjCgUuuC5oYTSUMP3JD1LRYvVRMPcOsVLuh4QRDTaRv3JW11EgYFSeuLOoVokl47YqAsARz-BX3gD4zQwBnH6O8DcsY5oSZrDdQ0y-vpYkD_jw_UaOd4dS0zzSBS_06s17pTAD80tG2fhgeYyLkyjo9v6PDdEbFQEdRNAq_BYUjcs_ehZHlTv7JG6yXsQvTxMPNKjC9sBTUxyi1CNB0Cw7iyKDLpBuiRq6CQs3CWy-soIDXYbcf4WmGg-NcCGy6JpKdd1U4Sv1gyu8ieG-1VklHVs&state=d2d66f4c454a359b9373102ed3d63e6c0e435c55b3ba5b59" for 127.0.0.1 at 2014-03-26 16:16:11 -0400
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQDu26PiJsnuovItoFdz9fHObUnp2sHHDlHxeBjAOWjjCgUuuC5oYTSUMP3JD1LRYvVRMPcOsVLuh4QRDTaRv3JW11EgYFSeuLOoVokl47YqAsARz-BX3gD4zQwBnH6O8DcsY5oSZrDdQ0y-vpYkD_jw_UaOd4dS0zzSBS_06s17pTAD80tG2fhgeYyLkyjo9v6PDdEbFQEdRNAq_BYUjcs_ehZHlTv7JG6yXsQvTxMPNKjC9sBTUxyi1CNB0Cw7iyKDLpBuiRq6CQs3CWy-soIDXYbcf4WmGg-NcCGy6JpKdd1U4Sv1gyu8ieG-1VklHVs", "state"=>"d2d66f4c454a359b9373102ed3d63e6c0e435c55b3ba5b59", "provider"=>"facebook"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '100002113682553' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (11.7ms)[0m  [1mUPDATE "users" SET "oauth_token" = ?, "oauth_expires_at" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["oauth_token", "CAADunxRE77ABAIxGrsZAIBhsjlu7VCp4urBHccC3nuAaCZBwQBpyyzwhxgz2wXF1JZCnh2JsXAo1yZAfwNaLYb2VRZAtdJFIaQZBs8bNhfwgsj8w8Vc61Fm2Yo8Trf48SmCiG5Jr9iIaYo7XqjpVlDRqHNGZB9IBGNPN7w5TQ9vt7YMcyJ12WSFjue4qFKHpQgZD"], ["oauth_expires_at", Sun, 25 May 2014 18:53:56 UTC +00:00], ["updated_at", Wed, 26 Mar 2014 20:16:11 UTC +00:00]]
+  [1m[35m (18.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/journeys
+Completed 302 Found in 63ms (ActiveRecord: 31.4ms)
+
+
+Started GET "/journeys" for 127.0.0.1 at 2014-03-26 16:16:11 -0400
+Processing by JourneysController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mJourney Load (2.6ms)[0m  SELECT "journeys".* FROM "journeys" WHERE "journeys"."uid" = 100002113682553
+  Rendered journeys/index.html.erb within layouts/application (85.2ms)
+Completed 200 OK in 128ms (Views: 90.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-26 16:16:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:11 -0400
+
+
+Started GET "/journeys/new" for 127.0.0.1 at 2014-03-26 16:16:14 -0400
+Processing by JourneysController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+  Rendered journeys/new.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/journeys" for 127.0.0.1 at 2014-03-26 16:16:32 -0400
+Processing by JourneysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pTrhfWzWvGFuZAro4TNSHz4rX1MNVa1LHv7uSK8v/kU=", "journey"=>{"name"=>"Vaticaan", "image"=>#<ActionDispatch::Http::UploadedFile:0xad608e4 @tempfile=#<Tempfile:/tmp/RackMultipart20140326-24104-ngo5l5>, @original_filename="Foto Ufficiale1A.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"journey[image]\"; filename=\"Foto Ufficiale1A.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.4ms)[0m  INSERT INTO "journeys" ("created_at", "name", "uid", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Wed, 26 Mar 2014 20:16:32 UTC +00:00], ["name", "Vaticaan"], ["uid", 100002113682553], ["updated_at", Wed, 26 Mar 2014 20:16:32 UTC +00:00]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/journeys
+Completed 302 Found in 44ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/journeys" for 127.0.0.1 at 2014-03-26 16:16:32 -0400
+Processing by JourneysController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mJourney Load (0.3ms)[0m  [1mSELECT "journeys".* FROM "journeys" WHERE "journeys"."uid" = 100002113682553[0m
+  Rendered journeys/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-26 16:16:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-26 16:16:32 -0400
+
+
+Started GET "/journeys/9" for 127.0.0.1 at 2014-03-26 16:16:35 -0400
+Processing by JourneysController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mJourney Load (0.2ms)[0m  SELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered journeys/show.html.erb within layouts/application (36.9ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (undefined local variable or method `journey' for #<#<Class:0xb5e09754>:0xb61334c0>):
+    3: <body>
+    4: 	<div id="travels">
+    5: 	<h1><%= @journey.name %></h1>
+    6: 	<%= image_tag journey.image_url.to_s%>
+    7: 	
+    8: 
+    9: </body>
+  app/views/journeys/show.html.erb:6:in `_app_views_journeys_show_html_erb___642383640__620129098'
+
+
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.2ms)
+
+
+Started GET "/journeys/9" for 127.0.0.1 at 2014-03-26 16:16:35 -0400
+Processing by JourneysController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mJourney Load (0.7ms)[0m  [1mSELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered journeys/show.html.erb within layouts/application (72.5ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error (undefined local variable or method `journey' for #<#<Class:0xb5e09754>:0xb6d67534>):
+    3: <body>
+    4: 	<div id="travels">
+    5: 	<h1><%= @journey.name %></h1>
+    6: 	<%= image_tag journey.image_url.to_s%>
+    7: 	
+    8: 
+    9: </body>
+  app/views/journeys/show.html.erb:6:in `_app_views_journeys_show_html_erb___642383640__613730808'
+
+
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.9ms)
+
+
+Started GET "/journeys" for 127.0.0.1 at 2014-03-26 16:33:30 -0400
+Processing by JourneysController#index as HTML
+  [1m[35mUser Load (14.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mJourney Load (1.1ms)[0m  [1mSELECT "journeys".* FROM "journeys" WHERE "journeys"."uid" = 100002113682553[0m
+  Rendered journeys/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 92ms (Views: 31.8ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-26 16:33:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-26 16:33:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-26 16:33:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-26 16:33:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-26 16:33:31 -0400
+
+
+Started GET "/journeys/new" for 127.0.0.1 at 2014-03-26 16:33:35 -0400
+Processing by JourneysController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered journeys/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 34ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/journeys" for 127.0.0.1 at 2014-03-26 16:33:48 -0400
+Processing by JourneysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pTrhfWzWvGFuZAro4TNSHz4rX1MNVa1LHv7uSK8v/kU=", "journey"=>{"name"=>"Vaticaanstad", "image"=>#<ActionDispatch::Http::UploadedFile:0xb66342d0 @tempfile=#<Tempfile:/tmp/RackMultipart20140326-24104-10gzm4e>, @original_filename="Foto Ufficiale1A.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"journey[image]\"; filename=\"Foto Ufficiale1A.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (17.5ms)[0m  [1mINSERT INTO "journeys" ("created_at", "name", "uid", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 26 Mar 2014 20:33:48 UTC +00:00], ["name", "Vaticaanstad"], ["uid", 100002113682553], ["updated_at", Wed, 26 Mar 2014 20:33:48 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/journeys
+Completed 302 Found in 82ms (ActiveRecord: 21.6ms)
+
+
+Started GET "/journeys" for 127.0.0.1 at 2014-03-26 16:33:48 -0400
+Processing by JourneysController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mJourney Load (0.3ms)[0m  SELECT "journeys".* FROM "journeys" WHERE "journeys"."uid" = 100002113682553
+  Rendered journeys/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-26 16:33:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-26 16:33:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-26 16:33:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-26 16:33:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-26 16:33:48 -0400
+
+
+Started GET "/journeys/10" for 127.0.0.1 at 2014-03-26 16:33:51 -0400
+Processing by JourneysController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mJourney Load (0.2ms)[0m  [1mSELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered journeys/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/journeys/10" for 127.0.0.1 at 2014-03-26 16:36:09 -0400
+Processing by JourneysController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mJourney Load (11.4ms)[0m  SELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered journeys/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 36ms (Views: 16.5ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/journeys/10" for 127.0.0.1 at 2014-03-26 16:41:32 -0400
+
+SyntaxError (/home/jharvard/railsprojects/fabulam/app/controllers/journeys_controller.rb:19: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1030318932__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /usr/share/ruby/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.9ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (442.3ms)
+
+
+Started POST "/journeys" for 127.0.0.1 at 2014-03-26 16:41:45 -0400
+
+SyntaxError (/home/jharvard/railsprojects/fabulam/app/controllers/journeys_controller.rb:19: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1030318932__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /usr/share/ruby/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started GET "/journeys" for 127.0.0.1 at 2014-03-26 17:20:20 -0400
+
+SyntaxError (/home/jharvard/railsprojects/fabulam/app/controllers/journeys_controller.rb:19: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1030318932__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /usr/share/ruby/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.3ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.7ms)
+  Rendered /home/jharvard/.gem/ruby/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.6ms)
+
+
+Started GET "/journeys" for 127.0.0.1 at 2014-03-26 17:21:20 -0400
+Processing by JourneysController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mJourney Load (0.2ms)[0m  SELECT "journeys".* FROM "journeys" WHERE "journeys"."uid" = 100002113682553
+  Rendered journeys/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 194ms (Views: 52.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-26 17:21:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-26 17:21:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 20

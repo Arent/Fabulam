@@ -14,7 +14,7 @@ class JourneysController < ApplicationController
  end
 
  def create
- #print params[:name]"
+
   @current_user ||= User.find(session[:user_id]) if session[:user_id]
   @journey = Journey.new(uid: current_user.uid, name: params[:journey][:name])
   if @journey.save

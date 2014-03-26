@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140326180356) do
+ActiveRecord::Schema.define(version: 20140326200200) do
 
   create_table "journeys", force: true do |t|
     t.integer  "uid"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140326180356) do
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
+    t.string   "image"
   end
 
   add_index "journeys", ["uid"], name: "index_journeys_on_uid"
