@@ -11,13 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140307101830) do
+ActiveRecord::Schema.define(version: 20140326180356) do
 
   create_table "journeys", force: true do |t|
     t.integer  "uid"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
   end
 
   add_index "journeys", ["uid"], name: "index_journeys_on_uid"

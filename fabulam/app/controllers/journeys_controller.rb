@@ -1,29 +1,41 @@
 class JourneysController < ApplicationController
  def index
  @current_user ||= User.find(session[:user_id]) if session[:user_id]
-  @journey = Journeys.where(uid:   current_user.uid)
+  @journey = Journey.where(uid:   current_user.uid)
  end
  
  def show
-  @journey = Journeys.find(params[:id])
+  @journey = Journey.find(params[:id])
  end
 
  def new
- @journey = Journeys.new
+ @current_user ||= User.find(session[:user_id]) if session[:user_id]
+ @journey = Journey.new
  end
 
  def create
-  ##@current_user ||= User.find(session[:user_id]) if session[:user_id]
-  #@journey = Journeys.new
-  #@journey.uid = "100002113682553"
-  #@journey.name = "Test" 
-  #@journey.save
+ #print params[:name]"
+  @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  @journey = Journey.new(uid: current_user.uid, name: params[:journey][:name])
+  if @journey.save
+    redirect_to journeys_path
+  else
+    render 'new'
+  end
  end
   
  def edit
+ @journey = Journey.find(params[:id])
  end
   
  def update
+ @journey = Journey.find(params[:id])
+ 
+  if @journey.update_attribute(:name, params[:journey][:name])
+   redirect_to journeys_path
+  else
+   render 'edit'
+  end
  end
 
  def destroy

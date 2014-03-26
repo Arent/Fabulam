@@ -11,15 +11,16 @@
 	</div>
 
 	<div id="travels">
-	Maak hieronder een nieuwe reis aan!
+	Pas hieronder je reisnaam aan!
 	
-	<%= form_for(@journey) do |f| %>
-		Naam van de reis! : <%= f.text_field :name %><br />
-		<%= f.submit %>
+	<%= form_for @journey do |f| %>
+	    <p>
+		<%=  f.label :name %><br/>
+		<%= f.text_field :name %>
+		</p>
+		<p>
+		<%= f.submit "Submit" %>
+		</p>
 	<% end %>
-
-	</div>
-	
-	<%= link_to "Bekijk al je reizen!", "/users/user" %>
 </body>
 </html>

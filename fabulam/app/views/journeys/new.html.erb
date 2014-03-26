@@ -3,14 +3,15 @@
 <body>
     <div>
 	<h1> Maak hieronder een nieuwe reis aan! </h1>
-	
-	<% form_for(@journey) do |f| %>
+	.
+	<%= form_for @journey ,:url => { :action => "create"}, :html => { :multipart => true} do |f| %>﻿
 	    <p>
-		<%= f.label :name %><br/<
+		<%=  f.label :name %><br/>
 		<%= f.text_field :name %>
-		</P>
+		<%= f.file_field :photo %>
+		</p>
 		<p>
-		<%f.submit "Dubmittt" %>
+		<%= f.submit "Submit" %>
 		</p>
 	<% end %>
 

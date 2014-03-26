@@ -14,6 +14,7 @@
 	Hieronder al je reizen!
 	<% @journey.each do |journey| %>
         <h2><%=  link_to journey.name, journey %></h2>
+        <p><%= link_to  "edit", edit_journey_path(journey) %></p>
 	<% end %> 
 	</div>
 	
