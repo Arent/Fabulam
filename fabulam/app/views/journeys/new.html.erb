@@ -7,8 +7,9 @@
 	<%= form_for @journey ,:url => { :action => "create"}, :html => { :multipart => true} do |f| %>﻿
 	    <p>
 		<%=  f.label :name %><br/>
-		<%= f.text_field :name %>
-		<%= f.file_field :image %>
+		<%= f.text_field :name %><br/>
+		<%= f.file_field :image %><br/>
+	    <%= f.file_field :image2 %>
 		</p>
 		<p>
 		<%= f.submit "Submit" %>
