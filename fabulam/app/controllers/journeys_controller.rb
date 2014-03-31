@@ -9,7 +9,11 @@ require 'fileutils'
  def show
   @current_user ||= User.find(session[:user_id]) if session[:user_id]
   @journey = Journey.find(params[:id])
-  @photo = Photo.where(jid: params[:id])   
+  @photo = Photo.where(jid: params[:id])  
+  @hash = Gmaps4rails.build_markers(@photo) do |photo, marker|
+    marker.lat photo.alt
+    marker.lng photo.lon
+  end
  end
 
  def new
@@ -35,7 +39,7 @@ require 'fileutils'
       file.write(uploaded_io.read)
     end
     photo_name = '/uploads/'+ current_user.uid.to_s + '/' + Journey.last.id.to_s + '/1' + File.extname(uploaded_io.original_filename).to_s 
-    if Photo.create(jid: Journey.last.id, picture: photo_name, text: 'Dit is een voorbeeld tekst', alt: 5, lon: 6)          
+    if Photo.create(jid: Journey.last.id, picture: photo_name, text: 'Dit is een voorbeeld tekst', alt: 51, lon: 4)          
     end 
   end
 
@@ -46,7 +50,7 @@ require 'fileutils'
       file.write(uploaded_io.read)
     end
     photo_name = '/uploads/'+ current_user.uid.to_s + '/' + Journey.last.id.to_s + '/2' + File.extname(uploaded_io.original_filename).to_s 
-    if Photo.create(jid: Journey.last.id, picture: photo_name, text: 'Dit is een voorbeeld tekst 2', alt: 5, lon: 6)          
+    if Photo.create(jid: Journey.last.id, picture: photo_name, text: 'Dit is een voorbeeld tekst 2', alt: 43, lon: 3.5)          
     end 
   end 
   
