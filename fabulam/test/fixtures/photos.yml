@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jid: 1
+  picture: MyString
+  text: MyText
+  alt: 1
+  lon: 1
+
+two:
+  jid: 1
+  picture: MyString
+  text: MyText
+  alt: 1
+  lon: 1

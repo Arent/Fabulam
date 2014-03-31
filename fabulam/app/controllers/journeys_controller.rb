@@ -7,27 +7,9 @@ require 'fileutils'
  end
  
  def show
- @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  @current_user ||= User.find(session[:user_id]) if session[:user_id]
   @journey = Journey.find(params[:id])
-  naam = "/uploads/"+current_user.uid+"/"+params[:id]+"/1.jpg"
-   if FileTest.exists?(Rails.root.to_s+'/public'+naam)
-        p "bestand bestaat"
-        @photolink = naam
-   else
-        p "bestand bestaat niet"
-        @photolink =""
-   end
-   
-     naam2 = "/uploads/"+current_user.uid+"/"+params[:id]+"/2.jpg"
-   if FileTest.exists?(Rails.root.to_s+'/public'+naam)
-        p "bestand bestaat"
-        @photolink2 = naam2
-   else
-        p "bestand bestaat niet"
-        @photolink2 =""
-   end
-   
-   
+  @photo = Photo.where(jid: params[:id])   
  end
 
  def new
@@ -47,16 +29,26 @@ require 'fileutils'
   directory_name = Rails.root.join('public', 'uploads', current_user.uid, Journey.last.id.to_s)
    Dir.mkdir(directory_name) unless File.exists?(directory_name)
    
-  uploaded_io = params[:journey][:image]
-  File.open(Rails.root.join('public', 'uploads', current_user.uid, Journey.last.id.to_s,'1'+File.extname(uploaded_io.original_filename).to_s), 'wb') do |file|
-    file.write(uploaded_io.read)
+  if params[:journey][:image]
+    uploaded_io = params[:journey][:image]
+    File.open(Rails.root.join('public', 'uploads', current_user.uid, Journey.last.id.to_s,'1'+File.extname(uploaded_io.original_filename).to_s), 'wb') do |file|
+      file.write(uploaded_io.read)
+    end
+    photo_name = '/uploads/'+ current_user.uid.to_s + '/' + Journey.last.id.to_s + '/1' + File.extname(uploaded_io.original_filename).to_s 
+    if Photo.create(jid: Journey.last.id, picture: photo_name, text: 'Dit is een voorbeeld tekst', alt: 5, lon: 6)          
+    end 
   end
+
     
-      uploaded_io = params[:journey][:image2]
-  File.open(Rails.root.join('public', 'uploads', current_user.uid, Journey.last.id.to_s,'2'+File.extname(uploaded_io.original_filename).to_s), 'wb') do |file|
-    file.write(uploaded_io.read)
-  end
-  
+  if params[:journey][:image2]
+    uploaded_io = params[:journey][:image2]
+    File.open(Rails.root.join('public', 'uploads', current_user.uid, Journey.last.id.to_s,'2'+File.extname(uploaded_io.original_filename).to_s), 'wb') do |file|
+      file.write(uploaded_io.read)
+    end
+    photo_name = '/uploads/'+ current_user.uid.to_s + '/' + Journey.last.id.to_s + '/2' + File.extname(uploaded_io.original_filename).to_s 
+    if Photo.create(jid: Journey.last.id, picture: photo_name, text: 'Dit is een voorbeeld tekst 2', alt: 5, lon: 6)          
+    end 
+  end 
   
   
  end

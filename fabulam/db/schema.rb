@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140326200200) do
+ActiveRecord::Schema.define(version: 20140331075618) do
 
   create_table "journeys", force: true do |t|
     t.integer  "uid"
@@ -25,6 +25,18 @@ ActiveRecord::Schema.define(version: 20140326200200) do
   end
 
   add_index "journeys", ["uid"], name: "index_journeys_on_uid"
+
+  create_table "photos", force: true do |t|
+    t.integer  "jid"
+    t.string   "picture"
+    t.text     "text"
+    t.integer  "alt"
+    t.integer  "lon"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "photos", ["jid"], name: "index_photos_on_jid"
 
   create_table "users", force: true do |t|
     t.string   "provider"
