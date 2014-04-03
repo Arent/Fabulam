@@ -7,13 +7,14 @@
 
 	<div id="travels">
 	<h1><%= @journey.name %></h1>
+	<h1><%= link_to  "Journeys", journeys_path %> </h1>
 	
 <div style='width: 800px;'>
   <div id="multi_markers" style='width: 800px; height: 400px;'></div>
 </div>
     
 
-</div> </br></br></br>
+</div> 
 	
 <script type="text/javascript">
 
@@ -25,17 +26,14 @@ handler.buildMap({ internal: {id: 'multi_markers'}}, function(){
 });
 </script>
 
-
-
 	
 	<div id="photos">
 	Hieronder al je fotos en verhalen </br>
+	<ul class="hoverbox">
 	<% @photo.each do |photo| %>
-      <%= image_tag photo.picture %> </br>
-      <p><%= photo.text %> </p> </br>
-  
-      
+     <li> <%= image_tag photo.picture, :class => "preview"  %></li>
 	<% end %> 
+	</ul>
 	</div>
 	
 

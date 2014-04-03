@@ -11,15 +11,17 @@
 	</div>
 
 	<div id="travels">
-	Hieronder al je reizen!
+	<h1>Hieronder al je reizen!</h1>
 	<% @journey.each do |journey| %>
         <h2><%=  link_to journey.name, journey %></h2>
+        <div id= "links">
         <%= link_to  "edit", edit_journey_path(journey) %>
-        <%= button_to 'Delete', journey, :method => :delete %> 
+        <%= button_to 'Delete', journey, :method => :delete %> </p>
+        </div>
 	<% end %> 
 	</div>
 	
-	<p><%= link_to "Add a new journey" , new_journey_path %> </p>
+	<h2><%= link_to "Add a new journey" , new_journey_path %> </h2>
 
 </body>
 </html>

@@ -2,15 +2,18 @@
 <html>
 <body>
 
-<h1>De echte homepage</h1>
+<h1>Login page</h1>
 
-<p>My first paragraph.</p>
+
 <div id="user_nav">
   <% if current_user %>
-    Signed in as <strong><%= current_user.name %></strong>!
-    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+    Signed in as <strong><%= current_user.name %></strong>! </br>
+    <h1><%= link_to "Sign out", signout_path, id: "sign_out" %></h1>      
+      <h1><%= link_to  "Journeys", journeys_path %> </h1>
   <% else %>
-    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+  
+  <h1>  <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %></h1>
+
   <% end %>
 </div>
 

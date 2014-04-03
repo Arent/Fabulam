@@ -3,14 +3,15 @@
 <body>
     <div>
 	<h1> Maak hieronder een nieuwe reis aan! </h1>
-	.
+    <h1><%= link_to "Journeys", journeys_path  %> </h1>
+	
 	<%= form_for @journey ,:url => { :action => "create"}, :html => { :multipart => true, :id => "form_name"} do |f| %>﻿
 	    <p>
 		 <%=  f.label :name %><br/>
 		 <%= f.text_field :name %><br/>
 		</p>
 		<p>
-		   <input type="button" onclick="addfile();" value="add file input" />
+		   <input type="button" onclick="addfile();" value="Voeg meer foto's toe!" />
 		</p>
 		<p>
 		<%= f.submit "Submit" %>
