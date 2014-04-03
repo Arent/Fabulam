@@ -33,25 +33,19 @@ require 'fileutils'
   directory_name = Rails.root.join('public', 'uploads', current_user.uid, Journey.last.id.to_s)
    Dir.mkdir(directory_name) unless File.exists?(directory_name)
    
-   i = 1
-   50.times do |x|
-      if params[:journey]["image#{i}"]
-   
-      photo_id = i.to_s
-      photo_place = "image"+i.to_s
-      p photo_place
-      
-            uploaded_io = params[:journey]["image#{i}"]
-            File.open(Rails.root.join('public', 'uploads', current_user.uid, Journey.last.id.to_s, photo_id  +File.extname(uploaded_io.original_filename).to_s), 'wb') do |file|
-              file.write(uploaded_io.read)
-            end
-            photo_name = '/uploads/'+ current_user.uid.to_s + '/' + Journey.last.id.to_s + '/' + photo_id + File.extname(uploaded_io.original_filename).to_s 
-            if Photo.create(jid: Journey.last.id, picture: photo_name, text: 'Dit is een voorbeeld tekst', alt: 51+i, lon: 4-i)          
-            end 
-       i = i +1     
-      end 
-    end
-
+   2.times do |i|
+      @file = "image" + i
+      if params[:journey][file]
+        uploaded_io = params[:journey][file]
+        File.open(Rails.root.join('public', 'uploads', current_user.uid, Journey.last.id.to_s, i +File.extname(uploaded_io.original_filename).to_s), 'wb') do |file|
+          file.write(uploaded_io.read)
+        end
+        photo_name = '/uploads/'+ current_user.uid.to_s + '/' + Journey.last.id.to_s + '/' + i + File.extname(uploaded_io.original_filename).to_s 
+        if Photo.create(jid: Journey.last.id, picture: photo_name, text: 'Dit is een voorbeeld tekst', alt: 51+i, lon:  4-i)          
+        end 
+      end  
+   end
+  
  end
   
  def edit

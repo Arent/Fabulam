@@ -4,18 +4,22 @@
     <div>
 	<h1> Maak hieronder een nieuwe reis aan! </h1>
 	.
-	<%= form_for @journey ,:url => { :action => "create"}, :html => { :multipart => true} do |f| %>﻿
+	<%= form_for @journey ,:url => { :action => "create"}, :html => { :multipart => true, :id => "form_name"} do |f| %>﻿
 	    <p>
-		<%=  f.label :name %><br/>
-		<%= f.text_field :name %><br/>
-		<%= f.file_field :image %><br/>
-	    <%= f.file_field :image2 %>
+		 <%=  f.label :name %><br/>
+		 <%= f.text_field :name %><br/>
+		</p>
+		<p>
+		   <input type="button" onclick="addfile();" value="add file input" />
 		</p>
 		<p>
 		<%= f.submit "Submit" %>
 		</p>
+        </div>
+
 	<% end %>
 
 	</div>
 </body>
 </html>
+
